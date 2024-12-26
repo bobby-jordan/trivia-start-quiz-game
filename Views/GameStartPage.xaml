@@ -1,9 +1,64 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TriviaStarQuizGame.Views.GameStartPage"
-             Title="Welcome to Trivia Star Quiz">
-    <StackLayout Padding="20">
-        <Entry Placeholder="Enter your name" Text="{Binding PlayerName}" />
-        <Button Text="Continue" Command="{Binding ContinueCommand}" />
-    </StackLayout>
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#8661f0">
+    <Grid>
+        <!-- Decorative Background Elements -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Decorative Question Marks -->
+        <Image Source="question_marks.png" HorizontalOptions="Center" VerticalOptions="Center" Opacity="0.5" Grid.Row="0" />
+
+        <!-- Content Card -->
+        <Frame Grid.Row="1" CornerRadius="20" Padding="20" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Center"
+               WidthRequest="800">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Are You Ready for the Ultimate Trivia Challenge?"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="#3D3D3D"
+                       HorizontalOptions="Center" />
+                <Label Text="Test your knowledge, outsmart your friends, and win exciting prizes!"
+                       FontSize="16"
+                       TextColor="#AAAAAA"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center" />
+                <Entry Placeholder="Enter your name" Text="{Binding PlayerName}"  WidthRequest="200" HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Frame Grid.Row="2"
+               CornerRadius="20"
+               Padding="0"
+               BackgroundColor="{Binding ButtonBackgroundColor}"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Margin="10"
+               HeightRequest="60"
+               WidthRequest="200">  
+            <Grid>
+                <!-- Path for the arrow -->
+                <Path
+                    Data="M16.9428 5.72378C16.4221 5.20308 15.5779 5.20308 15.0572 5.72378C14.5365 6.24448 14.5365 7.0887 15.0572 7.60939L22.1144 14.6666H6.66668C5.9303 14.6666 5.33334 15.2635 5.33334 15.9999C5.33334 16.7363 5.9303 17.3333 6.66668 17.3333H22.1144L15.0572 24.3904C14.5365 24.9111 14.5365 25.7554 15.0572 26.2761C15.5779 26.7968 16.4221 26.7968 16.9428 26.2761L26.2752 16.9437C26.2784 16.9405 26.2816 16.9372 26.2848 16.934C26.5201 16.6943 26.6656 16.3661 26.6667 16.0039C26.6667 16.0026 26.6667 16.0013 26.6667 15.9999C26.6667 15.9986 26.6667 15.9973 26.6667 15.9959C26.6661 15.8166 26.6302 15.6456 26.5655 15.4895C26.5019 15.3359 26.4084 15.1916 26.2848 15.0659C26.2817 15.0626 26.2785 15.0595 26.2753 15.0563M26.2753 15.0563L16.9428 5.72378L26.2753 15.0563Z"
+                    Fill="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="32"
+                    HeightRequest="32">
+                    <Path.GestureRecognizers>
+                        <PointerGestureRecognizer PointerEnteredCommand="{Binding PointerEnteredCommand}" 
+                                          PointerExitedCommand="{Binding PointerExitedCommand}" />
+                        <TapGestureRecognizer Command="{Binding ContinueCommand}" />
+                    </Path.GestureRecognizers>
+                </Path>
+            </Grid>
+        </Frame>
+
+
+    </Grid>
 </ContentPage>

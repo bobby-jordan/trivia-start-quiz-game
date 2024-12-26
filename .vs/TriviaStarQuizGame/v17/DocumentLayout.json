@@ -3,103 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\views\\questionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:views\\questionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\views\\questionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:views\\questionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Aapt2.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\viewmodels\\questionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:viewmodels\\questionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\viewmodels\\selectcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:viewmodels\\selectcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\enums\\quizcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:enums\\quizcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\views\\selectcategorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:views\\selectcategorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\views\\selectcategorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:views\\selectcategorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\viewmodels\\finalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:viewmodels\\finalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\converters\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:converters\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\converters\\selectedanswerborderconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:converters\\selectedanswerborderconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\converters\\submitbuttoncolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:converters\\submitbuttoncolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\converters\\selectedanswerbackgroundconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:converters\\selectedanswerbackgroundconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\triviastarquizgame.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:triviastarquizgame.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\viewmodels\\gamestartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:viewmodels\\gamestartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\views\\finalpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:views\\finalpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\views\\gamestartpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:views\\gamestartpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\views\\gamestartpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:views\\gamestartpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\views\\finalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:views\\finalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\viewmodels\\questionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:viewmodels\\questionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\views\\selectcategorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:views\\selectcategorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|c:\\users\\boris\\source\\repos\\portfolio\\triviastarquizgame\\enums\\quizcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27397B68-1B1F-4106-8FC6-7725CBF1E2A9}|TriviaStarQuizGame.csproj|solutionrelative:enums\\quizcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -112,60 +49,59 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Answer.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Models\\Answer.cs",
-              "RelativeDocumentMoniker": "Models\\Answer.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Models\\Answer.cs",
-              "RelativeToolTip": "Models\\Answer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T22:52:06.969Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QuestionPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\QuestionPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\QuestionPage.xaml.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\QuestionPage.xaml.cs",
-              "RelativeToolTip": "Views\\QuestionPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T22:01:29.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AndroidManifest.xml",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Platforms\\Android\\AndroidManifest.xml",
-              "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Platforms\\Android\\AndroidManifest.xml",
-              "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2024-12-25T23:21:01.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FinalPage.xaml",
+              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\FinalPage.xaml",
+              "RelativeDocumentMoniker": "Views\\FinalPage.xaml",
+              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\FinalPage.xaml",
+              "RelativeToolTip": "Views\\FinalPage.xaml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAwBwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-26T12:33:39.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "QuestionPage.xaml",
               "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\QuestionPage.xaml",
               "RelativeDocumentMoniker": "Views\\QuestionPage.xaml",
               "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\QuestionPage.xaml",
               "RelativeToolTip": "Views\\QuestionPage.xaml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAmwDYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-25T21:58:13.192Z",
+              "WhenOpened": "2024-12-26T12:24:57.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameStartPage.xaml",
+              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\GameStartPage.xaml",
+              "RelativeDocumentMoniker": "Views\\GameStartPage.xaml",
+              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\GameStartPage.xaml",
+              "RelativeToolTip": "Views\\GameStartPage.xaml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAmwB4AAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-26T04:13:39.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SelectCategoryPage.xaml",
+              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\SelectCategoryPage.xaml",
+              "RelativeDocumentMoniker": "Views\\SelectCategoryPage.xaml",
+              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\SelectCategoryPage.xaml",
+              "RelativeToolTip": "Views\\SelectCategoryPage.xaml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACUAAAB4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-26T03:59:31.196Z",
               "EditorCaption": ""
             },
             {
@@ -176,290 +112,65 @@
               "RelativeDocumentMoniker": "ViewModels\\QuestionViewModel.cs",
               "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\ViewModels\\QuestionViewModel.cs",
               "RelativeToolTip": "ViewModels\\QuestionViewModel.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAApwB4AAAATAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAIA1wDcAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T21:58:59.143Z",
+              "WhenOpened": "2024-12-26T03:59:20.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Xamarin.Android.Aapt2.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Aapt2.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Aapt2.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Aapt2.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Aapt2.targets",
-              "ViewState": "AQIAAM4AAAAAAAAAAAAmwNUAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-12-25T23:21:00.63Z",
+              "DocumentIndex": 2,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Resources\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "Resources\\Styles\\Colors.xaml",
+              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Resources\\Styles\\Colors.xaml",
+              "RelativeToolTip": "Resources\\Styles\\Colors.xaml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-26T03:49:04.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "SelectCategoryViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\ViewModels\\SelectCategoryViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\SelectCategoryViewModel.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\ViewModels\\SelectCategoryViewModel.cs",
-              "RelativeToolTip": "ViewModels\\SelectCategoryViewModel.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAlwBoAAABeAAAA",
+              "Title": "Answer.cs",
+              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Models\\Answer.cs",
+              "RelativeDocumentMoniker": "Models\\Answer.cs",
+              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Models\\Answer.cs",
+              "RelativeToolTip": "Models\\Answer.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T21:58:51.885Z",
+              "WhenOpened": "2024-12-26T12:29:49.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SelectCategoryPage.xaml",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\SelectCategoryPage.xaml",
-              "RelativeDocumentMoniker": "Views\\SelectCategoryPage.xaml",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\SelectCategoryPage.xaml",
-              "RelativeToolTip": "Views\\SelectCategoryPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-25T22:01:14.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SelectCategoryPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\SelectCategoryPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\SelectCategoryPage.xaml.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\SelectCategoryPage.xaml.cs",
-              "RelativeToolTip": "Views\\SelectCategoryPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T22:01:19.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FinalViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\ViewModels\\FinalViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\FinalViewModel.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\ViewModels\\FinalViewModel.cs",
-              "RelativeToolTip": "ViewModels\\FinalViewModel.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAwAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T21:59:10.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BaseViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\ViewModels\\BaseViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\BaseViewModel.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\ViewModels\\BaseViewModel.cs",
-              "RelativeToolTip": "ViewModels\\BaseViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T21:59:16.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAwwAsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-25T21:55:34.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Question.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Models\\Question.cs",
-              "RelativeDocumentMoniker": "Models\\Question.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Models\\Question.cs",
-              "RelativeToolTip": "Models\\Question.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T22:53:41.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BoolToColorConverter.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Converters\\BoolToColorConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\BoolToColorConverter.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Converters\\BoolToColorConverter.cs",
-              "RelativeToolTip": "Converters\\BoolToColorConverter.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA+wBkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T22:39:21.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SelectedAnswerBorderConverter.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Converters\\SelectedAnswerBorderConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\SelectedAnswerBorderConverter.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Converters\\SelectedAnswerBorderConverter.cs",
-              "RelativeToolTip": "Converters\\SelectedAnswerBorderConverter.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAUwAoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T22:23:05.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SubmitButtonColorConverter.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Converters\\SubmitButtonColorConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\SubmitButtonColorConverter.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Converters\\SubmitButtonColorConverter.cs",
-              "RelativeToolTip": "Converters\\SubmitButtonColorConverter.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAIwBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T22:23:40.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "TriviaStarQuizGame",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\TriviaStarQuizGame.csproj",
-              "RelativeDocumentMoniker": "TriviaStarQuizGame.csproj",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\TriviaStarQuizGame.csproj",
-              "RelativeToolTip": "TriviaStarQuizGame.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-25T22:22:47.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SelectedAnswerBackgroundConverter.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Converters\\SelectedAnswerBackgroundConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\SelectedAnswerBackgroundConverter.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Converters\\SelectedAnswerBackgroundConverter.cs",
-              "RelativeToolTip": "Converters\\SelectedAnswerBackgroundConverter.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA2wBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T22:18:27.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\AppShell.xaml",
-              "RelativeDocumentMoniker": "AppShell.xaml",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\AppShell.xaml",
-              "RelativeToolTip": "AppShell.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-25T22:18:39.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "GameStartViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\ViewModels\\GameStartViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\GameStartViewModel.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\ViewModels\\GameStartViewModel.cs",
-              "RelativeToolTip": "ViewModels\\GameStartViewModel.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAIwA0AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T21:58:41.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FinalPage.xaml",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\FinalPage.xaml",
-              "RelativeDocumentMoniker": "Views\\FinalPage.xaml",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\FinalPage.xaml",
-              "RelativeToolTip": "Views\\FinalPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-25T21:58:22.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "GameStartPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\GameStartPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\GameStartPage.xaml.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\GameStartPage.xaml.cs",
-              "RelativeToolTip": "Views\\GameStartPage.xaml.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAA3wAgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T21:57:40.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAkwAgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T21:55:36.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FinalPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\FinalPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\FinalPage.xaml.cs",
-              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Views\\FinalPage.xaml.cs",
-              "RelativeToolTip": "Views\\FinalPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T22:01:42.677Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "99fa1a4f-12aa-4ed5-957d-9b8512c324af",
-        "Display": 1,
-        "X": 122,
-        "Y": 170,
-        "Width": 917,
-        "Height": 427,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "QuizCategory.cs",
               "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Enums\\QuizCategory.cs",
               "RelativeDocumentMoniker": "Enums\\QuizCategory.cs",
               "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Enums\\QuizCategory.cs",
               "RelativeToolTip": "Enums\\QuizCategory.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwA8AAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T23:06:19.042Z",
+              "WhenOpened": "2024-12-26T03:58:20.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Resources\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "Resources\\Styles\\Styles.xaml",
+              "ToolTip": "C:\\Users\\boris\\source\\repos\\portfolio\\TriviaStarQuizGame\\Resources\\Styles\\Styles.xaml",
+              "RelativeToolTip": "Resources\\Styles\\Styles.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-26T03:49:11.725Z",
               "EditorCaption": ""
             }
           ]

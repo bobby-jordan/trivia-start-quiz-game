@@ -1,54 +1,40 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TriviaStarQuizGame.Views.QuestionPage"
-             Title="{Binding CurrentQuestion}">
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="{StaticResource Primary}">
+
     <StackLayout Padding="20" Spacing="15">
         <!-- Display the question -->
         <Label Text="{Binding CurrentQuestion}" 
-               FontSize="22" 
-               FontAttributes="Bold" 
                HorizontalOptions="Center" 
-               VerticalOptions="Center" 
-               TextColor="Black" />
+               VerticalOptions="Center" />
 
-        <StackLayout BindableLayout.ItemsSource="{Binding Answers}" Spacing="10" Padding="10">
+        <!-- List of answer buttons -->
+        <StackLayout BindableLayout.ItemsSource="{Binding Answers}" Spacing="10">
             <BindableLayout.ItemTemplate>
                 <DataTemplate>
-                    <Grid>
-                        <!-- Outer BoxView for border -->
-                        <BoxView Color="{Binding IsSelected, Converter={StaticResource BoolToColorConverter}}" 
-                         CornerRadius="20" 
-                         HorizontalOptions="Fill" 
-                         VerticalOptions="Fill" 
-                         Margin="0" />
-
-                        <!-- Inner Frame for content -->
-                        <Frame HasShadow="True"
-                       CornerRadius="18" 
-                       BackgroundColor="White"
-                       Padding="10" 
-                       Margin="5">
-                            <Label Text="{Binding Text}" 
-                           HorizontalOptions="Center" 
-                           VerticalOptions="Center" 
-                           FontSize="18" 
-                           TextColor="Black">
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding BindingContext.SelectAnswerCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}" CommandParameter="{Binding .}" />
-                                </Label.GestureRecognizers>
-                            </Label>
-                        </Frame>
-                    </Grid>
+                    <Button Text="{Binding Text}" 
+                            Command="{Binding BindingContext.SelectAnswerCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}" 
+                            CommandParameter="{Binding .}" 
+                            HorizontalOptions="FillAndExpand" 
+                            VerticalOptions="Center" 
+                            Margin="5">
+                        <Button.Triggers>
+                            <DataTrigger TargetType="Button" Binding="{Binding IsSelected}" Value="True">
+                                <Setter Property="BackgroundColor" Value="Orange" />
+                                <Setter Property="TextColor" Value="White" />
+                            </DataTrigger>
+                        </Button.Triggers>
+                    </Button>
                 </DataTemplate>
             </BindableLayout.ItemTemplate>
         </StackLayout>
 
         <!-- Submit button -->
         <Button Text="Submit Answer" 
+                BackgroundColor="#348210"
                 Command="{Binding SubmitAnswerCommand}" 
-                IsEnabled="{Binding IsSubmitEnabled}" 
-                BackgroundColor="{Binding IsSubmitEnabled, Converter={StaticResource SubmitButtonColorConverter}}" 
-                TextColor="White" 
-                FontAttributes="Bold" />
+                IsEnabled="{Binding IsSubmitEnabled}" />
     </StackLayout>
 </ContentPage>

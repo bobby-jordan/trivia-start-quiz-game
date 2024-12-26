@@ -1,9 +1,66 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TriviaStarQuizGame.Views.FinalPage"
-             Title="Congratulations!">
-    <StackLayout Padding="20">
-        <Label Text="{Binding CongratulationsMessage}" FontSize="18" />
-        <Button Text="Play Again" Command="{Binding PlayAgainCommand}" />
-    </StackLayout>
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#8661f0">
+
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+        <!-- Title -->
+        <Label Text="Nice work"
+               FontSize="50"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center" />
+
+        <!-- Glowing Checkmark -->
+        <Image Source="checkmark.png" HeightRequest="250" WidthRequest="250" />
+
+        <!-- Stars Row -->
+        <Grid VerticalOptions="Center" HorizontalOptions="Center" ColumnSpacing="10" RowSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Medium Star (Left) -->
+            <Path Data="M23.8934 5.55289C24.867 3.9267 27.1331 3.92671 28.1067 5.5529L33.8238 15.1023C34.1649 15.6719 34.7039 16.0813 35.3276 16.2443L45.7827 18.977C47.5631 19.4424 48.2633 21.6952 47.0846 23.1656L40.1629 31.8001C39.75 32.3152 39.5441 32.9776 39.5885 33.648L40.333 44.8863C40.4598 46.8001 38.6265 48.1924 36.9244 47.4749L26.9294 43.262C26.3332 43.0107 25.6669 43.0107 25.0707 43.262L15.0757 47.4749C13.3736 48.1924 11.5403 46.8001 11.6671 44.8863L12.4116 33.648C12.456 32.9776 12.2501 32.3152 11.8372 31.8001L4.91545 23.1656C3.73674 21.6952 4.43699 19.4424 6.21742 18.977L16.6725 16.2443C17.2962 16.0813 17.8352 15.6719 18.1763 15.1023L23.8934 5.55289Z"
+                  Fill="Wheat"
+                  Stroke="White"
+                  StrokeThickness="2"
+                  HeightRequest="50"
+                  WidthRequest="50"
+                  Margin="5" />
+
+            <!-- Largest Star (Center) -->
+            <Path Data="M23.8934 5.55289C24.867 3.9267 27.1331 3.92671 28.1067 5.5529L33.8238 15.1023C34.1649 15.6719 34.7039 16.0813 35.3276 16.2443L45.7827 18.977C47.5631 19.4424 48.2633 21.6952 47.0846 23.1656L40.1629 31.8001C39.75 32.3152 39.5441 32.9776 39.5885 33.648L40.333 44.8863C40.4598 46.8001 38.6265 48.1924 36.9244 47.4749L26.9294 43.262C26.3332 43.0107 25.6669 43.0107 25.0707 43.262L15.0757 47.4749C13.3736 48.1924 11.5403 46.8001 11.6671 44.8863L12.4116 33.648C12.456 32.9776 12.2501 32.3152 11.8372 31.8001L4.91545 23.1656C3.73674 21.6952 4.43699 19.4424 6.21742 18.977L16.6725 16.2443C17.2962 16.0813 17.8352 15.6719 18.1763 15.1023L23.8934 5.55289Z"
+                  Fill="Wheat"
+                  Stroke="White"
+                  StrokeThickness="2"
+                  HeightRequest="60"
+                  WidthRequest="60"
+                  Grid.Column="1"
+                  Margin="5" />
+
+            <!-- Medium Star (Right) -->
+            <Path Data="M23.8934 5.55289C24.867 3.9267 27.1331 3.92671 28.1067 5.5529L33.8238 15.1023C34.1649 15.6719 34.7039 16.0813 35.3276 16.2443L45.7827 18.977C47.5631 19.4424 48.2633 21.6952 47.0846 23.1656L40.1629 31.8001C39.75 32.3152 39.5441 32.9776 39.5885 33.648L40.333 44.8863C40.4598 46.8001 38.6265 48.1924 36.9244 47.4749L26.9294 43.262C26.3332 43.0107 25.6669 43.0107 25.0707 43.262L15.0757 47.4749C13.3736 48.1924 11.5403 46.8001 11.6671 44.8863L12.4116 33.648C12.456 32.9776 12.2501 32.3152 11.8372 31.8001L4.91545 23.1656C3.73674 21.6952 4.43699 19.4424 6.21742 18.977L16.6725 16.2443C17.2962 16.0813 17.8352 15.6719 18.1763 15.1023L23.8934 5.55289Z"
+                  Fill="Wheat"
+                  Stroke="White"
+                  StrokeThickness="2"
+                  HeightRequest="50"
+                  WidthRequest="50"
+                  Grid.Column="2"
+                  Margin="5" />
+        </Grid>
+
+        <!-- Score -->
+        <Label Text="You Earned 80 pts"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center" />
+
+        <Button Text="Play Again" Command="{Binding PlayAgainCommand}" 
+           HorizontalOptions="Center" />
+    </VerticalStackLayout>
 </ContentPage>

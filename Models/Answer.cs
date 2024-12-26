@@ -5,8 +5,9 @@ public class Answer : INotifyPropertyChanged
 {
     private bool isSelected;
 
-    public string Text { get; set; } // The text of the answer
-    public bool IsCorrect { get; set; } // Indicates if this is the correct answer
+    public string Text { get; set; }
+    public bool IsCorrect { get; set; }
+
     public bool IsSelected
     {
         get => isSelected;
@@ -15,15 +16,13 @@ public class Answer : INotifyPropertyChanged
             if (isSelected != value)
             {
                 isSelected = value;
-                OnPropertyChanged();
+                OnPropertyChanged(nameof(IsSelected));
             }
         }
     }
 
     public event PropertyChangedEventHandler PropertyChanged;
 
-    protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
-    {
+    protected void OnPropertyChanged(string propertyName) =>
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
 }

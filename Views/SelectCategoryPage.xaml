@@ -1,19 +1,57 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TriviaStarQuizGame.Views.SelectCategoryPage"
-             Title="Select a Category">
-    <StackLayout Padding="20" Spacing="15">
-        <Label Text="Select a Quiz Category:" FontSize="18" HorizontalOptions="Center" />
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="{StaticResource Primary}">
+    <!-- Outer layout -->
+    <Grid Padding="20">
+        <!-- Define rows for the label and the grid -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <!-- Label row -->
+            <RowDefinition Height="*" />
+            <!-- Fullscreen grid row -->
+        </Grid.RowDefinitions>
 
-        <!-- BindableLayout for dynamic category buttons -->
-        <StackLayout BindableLayout.ItemsSource="{Binding Categories}" Spacing="10">
-            <BindableLayout.ItemTemplate>
-                <DataTemplate>
-                    <Button Text="{Binding .}" 
-                            Command="{Binding BindingContext.SelectCategoryCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}" 
-                            CommandParameter="{Binding .}" />
-                </DataTemplate>
-            </BindableLayout.ItemTemplate>
-        </StackLayout>
-    </StackLayout>
+        <!-- Header Label -->
+        <Label Text="Select a Quiz Category:"
+               FontSize="18"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Grid.Row="0"
+               TextColor="{StaticResource TextLight}" />
+
+        <!-- Fullscreen Grid for categories -->
+        <Grid Grid.Row="1" ColumnSpacing="50" RowSpacing="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!-- Dynamically add buttons to the grid -->
+            <CollectionView ItemsSource="{Binding Categories}" SelectionMode="None" Grid.ColumnSpan="3" Grid.RowSpan="3">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="3" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate >
+                        <Button Text="{Binding .}" 
+                                Command="{Binding BindingContext.SelectCategoryCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}"
+                                CommandParameter="{Binding .}"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Margin="5"
+                                />
+                        <!-- Adds spacing between buttons -->
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </Grid>
 </ContentPage>

@@ -13,9 +13,7 @@ namespace TriviaStarQuizGame.ViewModels
     public class QuestionViewModel : BaseViewModel
     {
         private int questionIndex = 0;
-        private int score = 0;
         private string currentQuestion;
-        private QuizCategory currentCategory;
         private List<Answer> answers;
         private List<Question> questions;
 
@@ -23,12 +21,6 @@ namespace TriviaStarQuizGame.ViewModels
         {
             get => currentQuestion;
             set => SetProperty(ref currentQuestion, value);
-        }
-
-        public QuizCategory CurrentCategory
-        {
-            get => currentCategory;
-            set => SetProperty(ref currentCategory, value);
         }
 
         public List<Answer> Answers
@@ -45,14 +37,10 @@ namespace TriviaStarQuizGame.ViewModels
         public Command<Answer> SelectAnswerCommand { get; }
         public Command SubmitAnswerCommand { get; }
 
-        public QuestionViewModel(string category)
+        public QuestionViewModel()
         {
-            // Convert the string category to the QuizCategory enum
-            if (Enum.TryParse(category, true, out QuizCategory parsedCategory))
-            {
-                currentCategory = parsedCategory;
-                questions = GetQuestions(parsedCategory);
-            }
+            questions = GetQuestions(CurrentCategory); // Use the persisted category
+
             LoadQuestion();
 
             SelectAnswerCommand = new Command<Answer>(selectedAnswer =>
@@ -63,14 +51,15 @@ namespace TriviaStarQuizGame.ViewModels
                 }
 
                 // Notify UI about changes
+                OnPropertyChanged(nameof(Answers));
                 OnPropertyChanged(nameof(IsSubmitEnabled));
             });
 
-            SubmitAnswerCommand = new Command(() =>
+            SubmitAnswerCommand = new Command(async () =>
             {
                 if (Answers.FirstOrDefault(a => a.IsSelected)?.IsCorrect ?? false)
                 {
-                    score++;
+                    Score++; // Increment score
                 }
 
                 questionIndex++;
@@ -81,7 +70,7 @@ namespace TriviaStarQuizGame.ViewModels
                 }
                 else
                 {
-                    Application.Current.MainPage.Navigation.PushAsync(new FinalPage(score));
+                    await Shell.Current.GoToAsync($"//{nameof(FinalPage)}?score={Score}");
                 }
             });
         }
@@ -184,69 +173,6 @@ namespace TriviaStarQuizGame.ViewModels
                     new Answer { Text = "Fresco", IsCorrect = false },
                     new Answer { Text = "Pointillism", IsCorrect = false },
                     new Answer { Text = "Sfumato", IsCorrect = false }
-                }
-            }
-        },
-                QuizCategory.Nature => new List<Question>
-        {
-            new Question
-            {
-                Text = "What is the tallest tree species in the world?",
-                Category = category.ToString(),
-                Answers = new List<Answer>
-                {
-                    new Answer { Text = "Coast Redwood", IsCorrect = true },
-                    new Answer { Text = "Douglas Fir", IsCorrect = false },
-                    new Answer { Text = "Baobab", IsCorrect = false },
-                    new Answer { Text = "Giant Sequoia", IsCorrect = false }
-                }
-            },
-            new Question
-            {
-                Text = "What is the largest living land animal?",
-                Category = category.ToString(),
-                Answers = new List<Answer>
-                {
-                    new Answer { Text = "African Elephant", IsCorrect = true },
-                    new Answer { Text = "Hippopotamus", IsCorrect = false },
-                    new Answer { Text = "Giraffe", IsCorrect = false },
-                    new Answer { Text = "White Rhino", IsCorrect = false }
-                }
-            },
-            new Question
-            {
-                Text = "Which planet is known for its Great Red Spot?",
-                Category = category.ToString(),
-                Answers = new List<Answer>
-                {
-                    new Answer { Text = "Jupiter", IsCorrect = true },
-                    new Answer { Text = "Mars", IsCorrect = false },
-                    new Answer { Text = "Saturn", IsCorrect = false },
-                    new Answer { Text = "Neptune", IsCorrect = false }
-                }
-            },
-            new Question
-            {
-                Text = "Which type of rock is formed from molten lava?",
-                Category = category.ToString(),
-                Answers = new List<Answer>
-                {
-                    new Answer { Text = "Igneous", IsCorrect = true },
-                    new Answer { Text = "Sedimentary", IsCorrect = false },
-                    new Answer { Text = "Metamorphic", IsCorrect = false },
-                    new Answer { Text = "Basaltic", IsCorrect = false }
-                }
-            },
-            new Question
-            {
-                Text = "What is the largest rainforest in the world?",
-                Category = category.ToString(),
-                Answers = new List<Answer>
-                {
-                    new Answer { Text = "Amazon Rainforest", IsCorrect = true },
-                    new Answer { Text = "Congo Rainforest", IsCorrect = false },
-                    new Answer { Text = "Daintree Rainforest", IsCorrect = false },
-                    new Answer { Text = "Sundarbans", IsCorrect = false }
                 }
             }
         },
