@@ -8,8 +8,9 @@ namespace TriviaStarQuizGame.Models
 {
     public class Question
     {
-        public string Text { get; set; } // The question text
-        public string Category { get; set; } // The category of the question
-        public List<Answer> Answers { get; set; } // The list of answers
+        public string Text { get; set; } 
+        public string Category { get; set; } 
+        public string QuestionImage { get; set; } 
+        public List<Answer> Answers { get; set; } 
     }
 }
