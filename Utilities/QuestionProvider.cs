@@ -5,7 +5,7 @@ namespace TriviaStarQuizGame.Utilities
 {
     public class QuestionProvider
     {
-        public List<Question> GetQuestions(QuizCategory category)
+        public List<Question> GetQuestions(QuizCategory? category)
         {
             return category switch
             {

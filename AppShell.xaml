@@ -11,4 +11,5 @@
     <ShellContent ContentTemplate="{DataTemplate views:SelectCategoryPage}" Route="SelectCategoryPage" />
     <ShellContent ContentTemplate="{DataTemplate views:QuestionPage}" Route="QuestionPage" />
     <ShellContent ContentTemplate="{DataTemplate views:FinalPage}" Route="FinalPage" />
+    
 </Shell>

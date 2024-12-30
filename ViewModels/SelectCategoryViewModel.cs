@@ -15,14 +15,29 @@ namespace TriviaStarQuizGame.ViewModels
 
         public Command<string> SelectCategoryCommand { get; }
 
+        private string playerName;
+        public string PlayerName
+        {
+            get => playerName;
+            set => SetProperty(ref playerName, value);
+        }
+
+
         public SelectCategoryViewModel()
         {
-            SelectCategoryCommand = new Command<string>(async (selectedCategory) =>
+            SelectCategoryCommand = new Command<string>(async (category) =>
             {
-                if (!string.IsNullOrEmpty(selectedCategory))
+                if (!string.IsNullOrEmpty(category))
                 {
-                    CurrentCategory = Enum.Parse<QuizCategory>(selectedCategory); // Set the global property
-                    await Shell.Current.GoToAsync($"//{nameof(QuestionPage)}?category={CurrentCategory}");
+                    // Update CurrentCategory in the QuizState
+                    State.CurrentCategory = Enum.Parse<QuizCategory>(category);
+
+                    // Navigate to QuestionPage, passing both category and playerName
+                    await Shell.Current.GoToAsync($"{nameof(QuestionPage)}?playerName={PlayerName}&category={category}");
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Error", "Please select a category", "OK");
                 }
             });
         }

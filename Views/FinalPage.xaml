@@ -5,17 +5,14 @@
              BackgroundColor="{StaticResource Primary}">
 
     <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
-        <!-- Title -->
-        <Label Text="Nice work"
+        <Label Text="Nice work!"
                FontSize="50"
                FontAttributes="Bold"
                TextColor="White"
                HorizontalOptions="Center" />
 
-        <!-- Glowing Checkmark -->
         <Image Source="checkmark.png" HeightRequest="250" WidthRequest="250" />
 
-        <!-- Score -->
         <Label Text="{Binding Score, StringFormat='You Earned {0} pts'}" 
                FontSize="24"
                FontAttributes="Bold"

@@ -10,7 +10,7 @@ namespace TriviaStarQuizGame.ViewModels
     {
         public QuizState State => QuizState.Instance;
 
-        public QuizCategory CurrentCategory
+        public QuizCategory? CurrentCategory
         {
             get => State.CurrentCategory;
             set

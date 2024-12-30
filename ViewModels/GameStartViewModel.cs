@@ -36,23 +36,17 @@ namespace TriviaStarQuizGame.ViewModels
 
         public GameStartViewModel()
         {
-            PointerEnteredCommand = new Command(() => ButtonBackgroundColor = Color.FromArgb("#FFD699"));
-            PointerExitedCommand = new Command(() => ButtonBackgroundColor = Color.FromArgb("#F4A261"));
-
             ContinueCommand = new Command(async () =>
             {
                 if (!string.IsNullOrEmpty(PlayerName))
                 {
-                    // Navigate using Shell
-                    await Shell.Current.GoToAsync($"//{nameof(SelectCategoryPage)}?playerName={PlayerName}");
+                    await Shell.Current.GoToAsync(nameof(SelectCategoryPage));
                 }
                 else
                 {
-                    // Show alert if the name is empty
                     await Application.Current.MainPage.DisplayAlert("Error", "Please enter your name", "OK");
                 }
             });
-
         }
     }
 }

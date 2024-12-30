@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,11 +28,7 @@ namespace TriviaStarQuizGame.ViewModels
 
         public string QuestionImage => questions[questionIndex]?.QuestionImage; // Bindable property for image
 
-        public List<Answer> Answers
-        {
-            get => answers;
-            set => SetProperty(ref answers, value);
-        }
+        public ObservableCollection<Answer> Answers { get; set; } = new ObservableCollection<Answer>();
 
         public bool IsSubmitEnabled => Answers?.Any(a => a.IsSelected) ?? false;
 
@@ -46,36 +43,41 @@ namespace TriviaStarQuizGame.ViewModels
 
             LoadQuestion();
 
-            SelectAnswerCommand = new Command<Answer>(selectedAnswer =>
+            SelectAnswerCommand = new Command<Answer>(async (selectedAnswer) =>
             {
                 foreach (var answer in Answers)
                 {
                     answer.IsSelected = answer == selectedAnswer;
+                    Console.WriteLine($"{answer.Text}: IsSelected = {answer.IsSelected}");
                 }
 
                 // Notify UI about changes
                 OnPropertyChanged(nameof(Answers));
                 OnPropertyChanged(nameof(IsSubmitEnabled));
+
+                // Execute SubmitAnswerCommand logic
+                if (selectedAnswer != null)
+                {
+                    if (selectedAnswer.IsCorrect)
+                    {
+                        Score += 20; // Increment score
+                    }
+
+                    await Task.Delay(1000); // Pause for visual feedback
+
+                    questionIndex++;
+
+                    if (questionIndex < questions.Count)
+                    {
+                        LoadQuestion();
+                    }
+                    else
+                    {
+                        await Shell.Current.GoToAsync($"//{nameof(FinalPage)}?score={Score}");
+                    }
+                }
             });
 
-            SubmitAnswerCommand = new Command(async () =>
-            {
-                if (Answers.FirstOrDefault(a => a.IsSelected)?.IsCorrect ?? false)
-                {
-                    Score += 20; // Increment score
-                }
-
-                questionIndex++;
-
-                if (questionIndex < questions.Count)
-                {
-                    LoadQuestion();
-                }
-                else
-                {
-                    await Shell.Current.GoToAsync($"//{nameof(FinalPage)}?score={Score}");
-                }
-            });
         }
 
         private void LoadQuestion()
@@ -83,14 +85,18 @@ namespace TriviaStarQuizGame.ViewModels
             var current = questions[questionIndex];
             CurrentQuestion = current.Text;
 
-            Answers = current.Answers.Select(a => new Answer
-            {
-                Text = a.Text,
-                IsCorrect = a.IsCorrect,
-                IsSelected = false
-            }).ToList();
+            Answers.Clear(); // Clear previous answers
 
-            // Notify the UI
+            foreach (var answer in current.Answers)
+            {
+                Answers.Add(new Answer
+                {
+                    Text = answer.Text,
+                    IsCorrect = answer.IsCorrect,
+                    IsSelected = false
+                });
+            }
+
             OnPropertyChanged(nameof(CurrentQuestion));
             OnPropertyChanged(nameof(QuestionImage)); // Notify about image update
             OnPropertyChanged(nameof(Answers));
