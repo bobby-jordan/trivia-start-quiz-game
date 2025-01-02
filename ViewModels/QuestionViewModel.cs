@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using TriviaStarQuizGame.Enums;
+﻿using System.Collections.ObjectModel;
 using TriviaStarQuizGame.Models;
 using TriviaStarQuizGame.Utilities;
 using TriviaStarQuizGame.Views;
@@ -51,19 +44,17 @@ namespace TriviaStarQuizGame.ViewModels
                     Console.WriteLine($"{answer.Text}: IsSelected = {answer.IsSelected}");
                 }
 
-                // Notify UI about changes
                 OnPropertyChanged(nameof(Answers));
                 OnPropertyChanged(nameof(IsSubmitEnabled));
 
-                // Execute SubmitAnswerCommand logic
                 if (selectedAnswer != null)
                 {
                     if (selectedAnswer.IsCorrect)
                     {
-                        Score += 20; // Increment score
+                        Score += 20; 
                     }
 
-                    await Task.Delay(1000); // Pause for visual feedback
+                    await Task.Delay(1000); 
 
                     questionIndex++;
 
@@ -85,7 +76,7 @@ namespace TriviaStarQuizGame.ViewModels
             var current = questions[questionIndex];
             CurrentQuestion = current.Text;
 
-            Answers.Clear(); // Clear previous answers
+            Answers.Clear(); 
 
             foreach (var answer in current.Answers)
             {
@@ -98,7 +89,7 @@ namespace TriviaStarQuizGame.ViewModels
             }
 
             OnPropertyChanged(nameof(CurrentQuestion));
-            OnPropertyChanged(nameof(QuestionImage)); // Notify about image update
+            OnPropertyChanged(nameof(QuestionImage)); 
             OnPropertyChanged(nameof(Answers));
             OnPropertyChanged(nameof(IsSubmitEnabled));
         }

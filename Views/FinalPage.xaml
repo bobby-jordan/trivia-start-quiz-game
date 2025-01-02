@@ -11,7 +11,7 @@
                TextColor="White"
                HorizontalOptions="Center" />
 
-        <Image Source="checkmark.png" HeightRequest="250" WidthRequest="250" />
+        <Image Source="checkmark.png" HeightRequest="200" WidthRequest="250" />
 
         <Label Text="{Binding Score, StringFormat='You Earned {0} pts'}" 
                FontSize="24"
@@ -19,7 +19,11 @@
                TextColor="White"
                HorizontalOptions="Center" />
 
-        <Button Text="Play Again" Command="{Binding PlayAgainCommand}" 
-           HorizontalOptions="Center" />
+        <Button Text="Play Again"       
+                WidthRequest="200"
+                HeightRequest="50"
+                Padding="10"
+                Command="{Binding PlayAgainCommand}" 
+                VerticalOptions="Start" />
     </VerticalStackLayout>
 </ContentPage>

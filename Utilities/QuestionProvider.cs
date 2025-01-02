@@ -1,13 +1,15 @@
-﻿using TriviaStarQuizGame.Enums;
+﻿using System.Collections.ObjectModel;
+using TriviaStarQuizGame.Enums;
 using TriviaStarQuizGame.Models;
 
 namespace TriviaStarQuizGame.Utilities
 {
     public class QuestionProvider
     {
+        private static readonly Random RandomGenerator = new();
         public List<Question> GetQuestions(QuizCategory? category)
         {
-            return category switch
+            var questions = category switch
             {
                 QuizCategory.Science =>
                 [
@@ -17,9 +19,9 @@ namespace TriviaStarQuizGame.Utilities
                         Category = category.ToString(),
                         Answers =
                         [
-                            new() { Text = "H2O", IsCorrect = true },
                             new() { Text = "O2", IsCorrect = false },
                             new() { Text = "CO2", IsCorrect = false },
+                            new() { Text = "H2O", IsCorrect = true },
                             new() { Text = "NaCl", IsCorrect = false }
                         ],
                         QuestionImage = "water.jpg"
@@ -30,9 +32,9 @@ namespace TriviaStarQuizGame.Utilities
                         Category = category.ToString(),
                         Answers =
                         [
-                            new() { Text = "Mars", IsCorrect = true },
                             new() { Text = "Venus", IsCorrect = false },
                             new() { Text = "Jupiter", IsCorrect = false },
+                            new() { Text = "Mars", IsCorrect = true },
                             new() { Text = "Mercury", IsCorrect = false }
                         ],
                         QuestionImage = "mars.jpg"
@@ -42,9 +44,9 @@ namespace TriviaStarQuizGame.Utilities
                         Text = "What is the hardest natural substance on Earth?",
                         Category = category.ToString(),
                         Answers =
-                        [
-                            new() { Text = "Diamond", IsCorrect = true },
+                        [                            
                             new() { Text = "Gold", IsCorrect = false },
+                            new() { Text = "Diamond", IsCorrect = true },
                             new() { Text = "Iron", IsCorrect = false },
                             new() { Text = "Platinum", IsCorrect = false }
                         ],
@@ -69,10 +71,10 @@ namespace TriviaStarQuizGame.Utilities
                         Category = category.ToString(),
                         Answers =
                         [
-                            new() { Text = "Photosynthesis", IsCorrect = true },
                             new() { Text = "Respiration", IsCorrect = false },
                             new() { Text = "Digestion", IsCorrect = false },
-                            new() { Text = "Fermentation", IsCorrect = false }
+                            new() { Text = "Fermentation", IsCorrect = false },
+                            new() { Text = "Photosynthesis", IsCorrect = true }
                         ],
                         QuestionImage = "photosynthesis.jpg"
                     }
@@ -85,9 +87,9 @@ namespace TriviaStarQuizGame.Utilities
                         Category = category.ToString(),
                         Answers =
                         [
-                            new() { Text = "Leonardo da Vinci", IsCorrect = true },
                             new() { Text = "Pablo Picasso", IsCorrect = false },
                             new() { Text = "Vincent van Gogh", IsCorrect = false },
+                            new() { Text = "Leonardo da Vinci", IsCorrect = true },
                             new() { Text = "Claude Monet", IsCorrect = false }
                         ],
                          QuestionImage = "mona_lisa.jpg"
@@ -98,10 +100,10 @@ namespace TriviaStarQuizGame.Utilities
                         Category = category.ToString(),
                         Answers =
                         [
-                            new() { Text = "Surrealism", IsCorrect = true },
                             new() { Text = "Cubism", IsCorrect = false },
                             new() { Text = "Impressionism", IsCorrect = false },
-                            new() { Text = "Realism", IsCorrect = false }
+                            new() { Text = "Realism", IsCorrect = false },
+                            new() { Text = "Surrealism", IsCorrect = true },
                         ],
                         QuestionImage = "salvador_dali.jpg"
                     },
@@ -621,8 +623,18 @@ namespace TriviaStarQuizGame.Utilities
                         QuestionImage = "tennis.jpg"
                     }
                 ],
-                _ => []
+                _ => new List<Question>()
             };
+
+            // Shuffle answers for each question
+            foreach (var question in questions)
+            {
+                question.Answers = new ObservableCollection<Answer>(
+                    question.Answers.OrderBy(_ => RandomGenerator.Next())
+                );
+            }
+
+            return questions;
         }
     }
 }

@@ -11,23 +11,23 @@ namespace TriviaStarQuizGame.ViewModels
 {
     public class GameStartViewModel : BaseViewModel
     {
-        private string playerName = "Bobby";
-        public string PlayerName
-        {
-            get => playerName;
-            set => SetProperty(ref playerName, value);
-        }
-        private Color buttonBackgroundColor = Color.FromArgb("#F4A261");
+        //private string playerName = "Bobby";
+        //public string PlayerName
+        //{
+        //    get => playerName;
+        //    set => SetProperty(ref playerName, value);
+        //}
+        //private Color buttonBackgroundColor = Color.FromArgb("#F4A261");
 
-        public Color ButtonBackgroundColor
-        {
-            get => buttonBackgroundColor;
-            set
-            {
-                buttonBackgroundColor = value;
-                OnPropertyChanged();
-            }
-        }
+        //public Color ButtonBackgroundColor
+        //{
+        //    get => buttonBackgroundColor;
+        //    set
+        //    {
+        //        buttonBackgroundColor = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
 
 
         public ICommand ContinueCommand { get; }
