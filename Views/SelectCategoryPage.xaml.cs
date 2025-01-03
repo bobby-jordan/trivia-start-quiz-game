@@ -1,9 +1,15 @@
-namespace TriviaStarQuizGame.Views;
-public partial class SelectCategoryPage : ContentPage
+using Microsoft.Maui.Controls;
+
+using TriviaStarQuizGame.ViewModels;
+
+namespace TriviaStarQuizGame.Views
 {
-    public SelectCategoryPage(string playerName)
+    public partial class SelectCategoryPage : ContentPage
     {
-        InitializeComponent();
-        BindingContext = new ViewModels.SelectCategoryViewModel(playerName);
+        public SelectCategoryPage()
+        {
+            InitializeComponent();
+            BindingContext = new SelectCategoryViewModel();
+        }
     }
 }

@@ -9,7 +9,8 @@
             <converters:SelectedAnswerBackgroundConverter x:Key="SelectedAnswerBackgroundConverter" />
             <converters:SelectedAnswerBorderConverter x:Key="SelectedAnswerBorderConverter" />
             <converters:SubmitButtonColorConverter x:Key="SubmitButtonColorConverter" />
-            <converters:BoolToColorConverter x:Key="BoolToColorConverter" />
+            <converters:BoolToMultiColorConverter x:Key="BoolToMultiColorConverter" />
+            <converters:AnswerBorderColorConverter x:Key="AnswerBorderColorConverter" />
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />

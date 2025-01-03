@@ -1,10 +1,11 @@
-namespace TriviaStarQuizGame.Views;
+using TriviaStarQuizGame.ViewModels;
 
+namespace TriviaStarQuizGame.Views;
 public partial class QuestionPage : ContentPage
 {
-    public QuestionPage(string category)
+    public QuestionPage()
     {
         InitializeComponent();
-        BindingContext = new ViewModels.QuestionViewModel(category);
+        BindingContext = new QuestionViewModel();
     }
 }

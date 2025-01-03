@@ -1,10 +1,12 @@
+using TriviaStarQuizGame.ViewModels;
+
 namespace TriviaStarQuizGame.Views;
 
 public partial class FinalPage : ContentPage
 {
-    public FinalPage(int score)
+    public FinalPage()
     {
         InitializeComponent();
-        BindingContext = new ViewModels.FinalViewModel(score);
+        BindingContext = new FinalViewModel();
     }
 }

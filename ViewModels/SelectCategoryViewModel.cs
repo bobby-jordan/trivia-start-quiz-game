@@ -11,21 +11,34 @@ namespace TriviaStarQuizGame.ViewModels
 {
     public class SelectCategoryViewModel : BaseViewModel
     {
-        public string PlayerName { get; }
         public List<string> Categories { get; } = Enum.GetNames(typeof(QuizCategory)).ToList();
 
         public Command<string> SelectCategoryCommand { get; }
 
-        public SelectCategoryViewModel(string playerName)
+        private string playerName;
+        public string PlayerName
         {
-            PlayerName = playerName;
+            get => playerName;
+            set => SetProperty(ref playerName, value);
+        }
+
+
+        public SelectCategoryViewModel()
+        {
             SelectCategoryCommand = new Command<string>(async (category) =>
             {
-                Console.WriteLine($"Selected Category: {category}");
+                if (!string.IsNullOrEmpty(category))
+                {
+                    // Update CurrentCategory in the QuizState
+                    State.CurrentCategory = Enum.Parse<QuizCategory>(category);
 
-                // Handle category selection
-                await Application.Current.MainPage.Navigation.PushAsync(new Views.QuestionPage(category));
-
+                    // Navigate to QuestionPage, passing both category and playerName
+                    await Shell.Current.GoToAsync($"{nameof(QuestionPage)}?playerName={PlayerName}&category={category}");
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Error", "Please select a category", "OK");
+                }
             });
         }
     }
