@@ -1,16 +1,17 @@
-﻿namespace TriviaStarQuizGame.ViewModels
+﻿using TriviaStarQuizGame.Views;
+
+namespace TriviaStarQuizGame.ViewModels
 {
     public class FinalViewModel : BaseViewModel
     {
-        public int Score { get; }
         public Command PlayAgainCommand { get; }
 
-        public FinalViewModel(int score)
+        public FinalViewModel()
         {
-            Score = score;
             PlayAgainCommand = new Command(async () =>
             {
-                await Application.Current.MainPage.Navigation.PopToRootAsync();
+                // Navigate back to the GameStartPage
+                await Shell.Current.GoToAsync($"//{nameof(GameStartPage)}");
             });
         }
     }

@@ -15,7 +15,6 @@ namespace TriviaStarQuizGame.Enums
         Geography,
         Sport,
         Art,
-        Nature,
         Culture,
         Technology
     }

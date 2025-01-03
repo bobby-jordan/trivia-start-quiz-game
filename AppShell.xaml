@@ -3,13 +3,13 @@
     x:Class="TriviaStarQuizGame.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:TriviaStarQuizGame"
-    Shell.FlyoutBehavior="Disabled"
-    Title="TriviaStarQuizGame">
+    xmlns:views="clr-namespace:TriviaStarQuizGame.Views"
+    Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <!-- Routes for Navigation -->
+    <ShellContent ContentTemplate="{DataTemplate views:GameStartPage}" Route="GameStartPage" />
+    <ShellContent ContentTemplate="{DataTemplate views:SelectCategoryPage}" Route="SelectCategoryPage" />
+    <ShellContent ContentTemplate="{DataTemplate views:QuestionPage}" Route="QuestionPage" />
+    <ShellContent ContentTemplate="{DataTemplate views:FinalPage}" Route="FinalPage" />
+    
 </Shell>

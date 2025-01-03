@@ -1,9 +1,44 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TriviaStarQuizGame.Views.GameStartPage"
-             Title="Welcome to Trivia Star Quiz">
-    <StackLayout Padding="20">
-        <Entry Placeholder="Enter your name" Text="{Binding PlayerName}" />
-        <Button Text="Continue" Command="{Binding ContinueCommand}" />
-    </StackLayout>
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="{StaticResource Primary}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Image Source="question_marks.png" HorizontalOptions="Center" VerticalOptions="Center" Opacity="0.5" Grid.Row="0" />
+
+        <Frame Grid.Row="1" CornerRadius="20" Padding="20" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Center"
+               WidthRequest="800">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Are You Ready for the Ultimate Trivia Challenge?"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="#3D3D3D"
+                       HorizontalOptions="Center" />
+                <Label Text="Test your knowledge, outsmart your friends, and win exciting prizes!"
+                       FontSize="16"
+                       TextColor="#AAAAAA"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center" />
+                <Entry Placeholder="Enter your name"        
+                       Text="{Binding PlayerName, Mode=TwoWay}"  
+                       WidthRequest="200" 
+                       HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Continue" 
+                Grid.Row="2"
+                WidthRequest="200"
+                HeightRequest="50"
+                Padding="10"
+                Margin="5"
+                Command="{Binding ContinueCommand}" 
+                VerticalOptions="Start" />  
+    </Grid>
 </ContentPage>

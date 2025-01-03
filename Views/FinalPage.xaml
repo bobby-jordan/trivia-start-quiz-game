@@ -1,9 +1,29 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TriviaStarQuizGame.Views.FinalPage"
-             Title="Congratulations!">
-    <StackLayout Padding="20">
-        <Label Text="{Binding CongratulationsMessage}" FontSize="18" />
-        <Button Text="Play Again" Command="{Binding PlayAgainCommand}" />
-    </StackLayout>
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="{StaticResource Primary}">
+
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+        <Label Text="Nice work!"
+               FontSize="50"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center" />
+
+        <Image Source="checkmark.png" HeightRequest="200" WidthRequest="250" />
+
+        <Label Text="{Binding Score, StringFormat='You Earned {0} pts'}" 
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center" />
+
+        <Button Text="Play Again"       
+                WidthRequest="200"
+                HeightRequest="50"
+                Padding="10"
+                Command="{Binding PlayAgainCommand}" 
+                VerticalOptions="Start" />
+    </VerticalStackLayout>
 </ContentPage>
